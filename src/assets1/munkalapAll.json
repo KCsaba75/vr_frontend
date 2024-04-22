@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "megrendelo_id": {
+            "id": 1,
+            "nev": "Kiss Csaba Lajos",
+            "cim": "4031 debrecen Kishegyesi út 58  1/4",
+            "email": "kifejleszt.elek@gmail.com",
+            "telefon": 36703796508,
+            "gepjarmu_ID": 1
+        },
+        "hibatipus_id": {
+            "id": 1,
+            "hiba": "Fékrendszer"
+        },
+        "gepjarmu": {
+            "id": 1,
+            "rendszam": "ROS 453",
+            "gyartmany": "Suzuki",
+            "tipus": "Vitara",
+            "gyartasi_ev": 2019,
+            "alvazszam": 1234567889
+        },
+        "datum": "2024-02-23T00:00:00Z",
+        "utolsomodositas": "2024-02-23T00:00:00Z",
+        "munkalapstatus": "enum_value_1",
+        "munkalapszam": "2024.02.23/1",
+        "kmoraallas": 1236,
+        "uzemenyagszint": "enum_value_1",
+        "hibaleiras": "hdfhdfhd",
+        "varhatohatarido": "2024-02-28",
+        "elvegzettmunka": "",
+        "felhasznaltanyag": ""
+    },
+    {
+        "id": 2,
+        "megrendelo_id": {
+            "id": 2,
+            "nev": "Kasza Diána",
+            "cim": "Debrecen",
+            "email": "dia@ddd.hu",
+            "telefon": 3630479568,
+            "gepjarmu_ID": 2
+        },
+        "hibatipus_id": {
+            "id": 2,
+            "hiba": "Motor"
+        },
+        "gepjarmu": {
+            "id": 2,
+            "rendszam": "gdr-567",
+            "gyartmany": "Ford",
+            "tipus": "Fiesta",
+            "gyartasi_ev": 2009,
+            "alvazszam": 12255
+        },
+        "datum": "2024-03-22T12:25:29.961951Z",
+        "utolsomodositas": "2024-03-22T12:25:29.961951Z",
+        "munkalapstatus": "enum_value_2",
+        "munkalapszam": "20240322/2",
+        "kmoraallas": 12458,
+        "uzemenyagszint": "enum_value_3",
+        "hibaleiras": "Valami nem jó",
+        "varhatohatarido": "2024-03-28",
+        "elvegzettmunka": "",
+        "felhasznaltanyag": ""
+    }
+]

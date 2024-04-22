@@ -1,0 +1,11 @@
+[
+    {
+	"id": 2,
+        "munkalapszam": "20240322/1",
+        "megrendelo_neve": "Kasza Diána",
+        "munkalapstatusz": "Lezárt",
+        "uzemanyagszint": "Háromnegyed",
+        "hiba": "Motor",
+        "gepjarmu": "Ford"
+    }
+]
