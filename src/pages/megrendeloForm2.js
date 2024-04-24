@@ -11,7 +11,7 @@ function MegrendeloForm({ megrendeloId }) {
     rendszam: '',
     gyartmany: '',
     tipus: '',
-    gyartasiEv: '',
+    gyartasi_ev: '',
     alvazszam: ''
   });
 
@@ -23,7 +23,7 @@ function MegrendeloForm({ megrendeloId }) {
 
   const fetchMegrendelo = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/megrendelo/${megrendeloId}/`);
+      const response = await fetch(`http://localhost:8000/api/megrendelok/${megrendeloId}/`);
       const data = await response.json();
       setMegrendelo(data);
     } catch (error) {
@@ -43,7 +43,7 @@ function MegrendeloForm({ megrendeloId }) {
     e.preventDefault();
     try {
       if (megrendeloId) {
-        await fetch(`http://localhost:8000/megrendelo/${megrendeloId}/`, {
+        await fetch(`http://localhost:8000/api/megrendelok/${megrendeloId}/`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function MegrendeloForm({ megrendeloId }) {
           body: JSON.stringify(megrendelo),
         });
       } else {
-        await fetch('http://localhost:8000/megrendelo/', {
+        await fetch('http://localhost:8000/api/megrendelok/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -60,6 +60,7 @@ function MegrendeloForm({ megrendeloId }) {
         });
       }
       // Redirect or do something after successful form submission
+      console.log('POST request data:', megrendelo);
     } catch (error) {
       console.error('Error submitting megrendelo form:', error);
     }
@@ -82,7 +83,7 @@ function MegrendeloForm({ megrendeloId }) {
       <label>Típus:</label>
       <input type="text" name="tipus" value={megrendelo.tipus} onChange={handleChange} />
       <label>Gyártási év:</label>
-      <input type="text" name="gyartasiEv" value={megrendelo.gyartasiEv} onChange={handleChange} />
+      <input type="text" name="gyartasi_ev" value={megrendelo.gyartasiEv} onChange={handleChange} />
       <label>Alvázszám:</label>
       <input type="text" name="alvazszam" value={megrendelo.alvazszam} onChange={handleChange} />
       <button type="submit">Mentés</button>

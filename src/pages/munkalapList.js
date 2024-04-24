@@ -29,7 +29,7 @@ function MunkalapList() {
     <div>
         
       <h2>Munkalapok</h2>
-       <Link to="/munkalapok/new">Új munkalap létrehozása</Link>
+   
       <ul>
         {munkalapok.map(munkalap => (
           <li key={munkalap.id}>

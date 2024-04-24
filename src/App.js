@@ -3,8 +3,7 @@ import Navbar from './navbar'
 import MegrendeloList from './pages/megrendeloList';
 import MegrendeloDetail from './pages/megrendeloDetail';
 import MegrendeloForm from './pages/megrendeloForm2';
-import HibatipusList from './pages/hibatipusList';
-import HibatipusForm from './pages/hibatipusForm';
+
 import MunkalapList from './pages/munkalapList';
 import MunkalapDetail from './pages/munkalapDetail';
 import MunkalapForm from './pages/munkalapForm';
@@ -13,7 +12,7 @@ import AllSheet from './pages/osszesmunkalap'
 import InactiveSheet from './pages/lezartmunkalap'
 import ActiveSheet from './pages/aktivmunkalap'
 import NewSheet from './pages/ujmunkalap'
-import ViewSheet from './pages/viewsheet'
+
 import Welcome from './pages/welcome'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom' 
 
@@ -55,9 +54,7 @@ const App = () => {
               <Welcome />
             </Route>
 
-            <Route path="/viewsheet/:id">
-              <ViewSheet />
-            </Route>
+          
 
             <Route path="/ujmunkalap">
               <NewSheet />
@@ -76,11 +73,9 @@ const App = () => {
               </Route>
           <Route path="/megrendelok" exact component={MegrendeloList} />
           <Route path="/megrendelo/new" component={MegrendeloForm} />
-          <Route path="/megrendelo/:id/edit" component={MegrendeloForm} />
+        
           <Route path="/megrendelo/:id" component={MegrendeloDetail} />
-          <Route path="/hibatipusok" exact component={HibatipusList} />
-          <Route path="/hibatipusok/new" component={HibatipusForm} />
-          <Route path="/hibatipusok/:id/edit" component={HibatipusForm} />
+        
           <Route path="/munkalapok" exact component={MunkalapList} />
           <Route path="/munkalapok/new" component={MunkalapForm} />
           <Route path="/munkalapok/:id/edit" component={MunkalapForm} />
